@@ -5,7 +5,7 @@ title: game_coordinator
 
 To allow two players to play together, OpenTTD uses a Game Coordinator to facilitate this.
 
-When a server starts, it can register itself to the Game Coordinator. This happens when `server_game_type` is set to either `invite-only` or `public`. Upon registration, the Game Coordinator probes the network of the server, and assigns the server an unique code, called an `invite code`.
+When a server starts, it can register itself to the Game Coordinator. This happens when <SwmToken path="/src/settings_type.h" pos="304:3:3" line-data="	ServerGameType server_game_type;                      ///&lt; Server type: local / public / invite-only." repo-id="Z2l0aHViJTNBJTNBT3BlblRURE9yaWdpbmFsJTNBJTNBZ2lsYWRuYXZvdA==" repo-name="OpenTTDOriginal">`server_game_type`</SwmToken> is set to either `invite-only` or `public`. Upon registration, the Game Coordinator probes the network of the server, and assigns the server an unique code, called an `invite code`.
 
 When a client wants to join a server, it asks the Game Coordinator to help with this by giving it the `invite code` of the server. The Game Coordinator will, in this order, attempt several ways to connect the client and server together:
 
