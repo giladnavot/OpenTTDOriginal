@@ -3,7 +3,7 @@ title: linkgraph
 ---
 # Some clarifications about the link graph
 
-`InitializeLinkGraphs` joins all threads, so if the game is abandoned with some threads still running, they're joined as soon as the next game (possibly the title game) is started. See also `InitializeGame`.
+`InitializeLinkGraphs` joins all threads, so if the game is abandoned with some threads still running, they're joined as soon as the next game (possibly the title game) is started. See also <SwmToken path="/src/misc.cpp" pos="95:2:2" line-data="void InitializeGame(uint size_x, uint size_y, bool reset_date, bool reset_settings)" repo-id="Z2l0aHViJTNBJTNBT3BlblRURE9yaWdpbmFsJTNBJTNBZ2lsYWRuYXZvdA==" repo-name="OpenTTDOriginal">`InitializeGame`</SwmToken>.
 
 The MCF (multi-commodity flow) algorithm can be quite CPU-hungry as it's NP-hard and takes exponential time (though with a very small constant factor) in the number of nodes.
 
